@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "title": "Chakraalu",
+    "image": "images/chekaralu.png",
+    "telugu_title": "చక్రాలు",
+    "price_starting_from": "",
+    "half_kg_price": "",
+    "kg_price": ""
+  },
+  {
+    "id": 2,
+    "title": "Chekkalu",
+    "image": "images/chekkalu.png",
+    "telugu_title": "చెక్కలు",
+    "price_starting_from": "",
+    "half_kg_price": "",
+    "kg_price": ""
+  },
+  {
+    "id": 3,
+    "title": "Ribbon Pakodi",
+    "image": "images/ribbon_pakodi.png",
+    "telugu_title": "రిబ్బన్ పకోడీ",
+    "price_starting_from": "",
+    "half_kg_price": "",
+    "kg_price": ""
+  },
+  {
+    "id": 4,
+    "title": "Sunnundalu",
+    "image": "images/sunnundalu.png",
+    "telugu_title": "సున్నుండలు",
+    "price_starting_from": "",
+    "half_kg_price": "",
+    "kg_price": ""
+  },
+  {
+    "id": 5,
+    "title": "bellam nuvvula Laddu",
+    "image": "images/Nuvulaladdu.png",
+    "telugu_title": "బెల్లం నువ్వుల లడ్డు",
+    "price_starting_from": "",
+    "half_kg_price": "",
+    "kg_price": ""
+  },
+  {
+    "id": 6,
+    "title": "boondhi",
+    "image": "images/boondhi.png",
+    "telugu_title": "బూందీ",
+    "price_starting_from": "",
+    "half_kg_price": "",
+    "kg_price": ""
+  },
+  {
+    "id": 7,
+    "title": "Bellam gavvalu",
+    "image": "images/Bellam_Gavvalu.png",
+    "telugu_title": "గవ్వలు",
+    "price_starting_from": "",
+    "half_kg_price": "",
+    "kg_price": ""
+  },
+  {
+    "id": 9,
+    "title": "kaaram Gavvalu",
+    "image": "images/Karam_Gavvalu.png",
+    "telugu_title": "కారం గవ్వలు",
+    "price_starting_from": "",
+    "half_kg_price": "",
+    "kg_price": ""
+  },
+  {
+    "id": 10,
+    "title": "Theepi Kommulu",
+    "image": "images/tepikumulu.png",
+    "telugu_title": "తీపి కొమ్ములు",
+    "price_starting_from": "",
+    "half_kg_price": "",
+    "kg_price": ""
+  },
+  {
+    "id": 11,
+    "title": "Boondhi Laddo",
+    "image": "images/laddu.png",
+    "telugu_title": "బూందీ లడ్డు",
+    "price_starting_from": "",
+    "half_kg_price": "",
+    "kg_price": ""
+  },
+  {
+    "id": 12,
+    "title": "Karappusa",
+    "image": "images/karappusa.png",
+    "telugu_title": "కారప్పుస",
+    "price_starting_from": "",
+    "half_kg_price": "",
+    "kg_price": ""
+  },
+  {
+    "id": 13,
+    "title": "Panasa Thonalu",
+    "image": "images/panasa_tonalu.png",
+    "telugu_title": "పనస తోనాలు",
+    "price_starting_from": "",
+    "half_kg_price": "",
+    "kg_price": ""
+  },
+  {
+    "id": 14,
+    "title": "Avakai Pickle",
+    "image": "images/Avakaya.png",
+    "telugu_title": "ఆవకాయ",
+    "price_starting_from": "",
+    "half_kg_price": "",
+    "kg_price": ""
+  },
+  {
+    "id": 15,
+    "title": "Tomato Pickle",
+    "image": "images/tomatopickle.png",
+    "telugu_title": "టమోటా పచ్చడి",
+    "price_starting_from": "",
+    "half_kg_price": "",
+    "kg_price": ""
+  },
+  {
+    "id": 15,
+    "title": "Usirikaya Pickle",
+    "image": "images/usirikaya_pickle.png",
+    "telugu_title": "ఉసిరికాయ పచ్చడి",
+    "price_starting_from": "",
+    "half_kg_price": "",
+    "kg_price": ""
+  },
+  {
+    "id": 15,
+    "title": "Gongura Pickle",
+    "image": "images/gongurapickle.png",
+    "telugu_title": "గోంగూర పచ్చడి ",
+    "price_starting_from": "",
+    "half_kg_price": "",
+    "kg_price": ""
+  }
+]
