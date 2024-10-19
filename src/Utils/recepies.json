@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Chakraalu",
-    "image": "/images/chekaralu.png",
+    "image": "https://res.cloudinary.com/dhjygngv2/image/upload/v1729357628/chekaralu_nzt2mo.png",
     "telugu_title": "చక్రాలు",
     "price_starting_from": "",
     "half_kg_price": "",
@@ -11,7 +11,7 @@
   {
     "id": 2,
     "title": "Chekkalu",
-    "image": "images/chekkalu.png",
+    "image": "https://res.cloudinary.com/dhjygngv2/image/upload/v1729357628/chekkalu_jiovga.png",
     "telugu_title": "చెక్కలు",
     "price_starting_from": "",
     "half_kg_price": "",
@@ -20,7 +20,7 @@
   {
     "id": 3,
     "title": "Ribbon Pakodi",
-    "image": "images/ribbon_pakodi.png",
+    "image": "https://res.cloudinary.com/dhjygngv2/image/upload/v1729357635/ribbon_pakodi_n858lk.png",
     "telugu_title": "రిబ్బన్ పకోడీ",
     "price_starting_from": "",
     "half_kg_price": "",
@@ -29,7 +29,7 @@
   {
     "id": 4,
     "title": "Sunnundalu",
-    "image": "images/sunnundalu.png",
+    "image": "https://res.cloudinary.com/dhjygngv2/image/upload/v1729357636/sunnundalu_nr5oxk.png",
     "telugu_title": "సున్నుండలు",
     "price_starting_from": "",
     "half_kg_price": "",
@@ -38,7 +38,7 @@
   {
     "id": 5,
     "title": "bellam nuvvula Laddu",
-    "image": "images/Nuvulaladdu.png",
+    "image": "https://res.cloudinary.com/dhjygngv2/image/upload/v1729357633/Nuvulaladdu_berjog.png",
     "telugu_title": "బెల్లం నువ్వుల లడ్డు",
     "price_starting_from": "",
     "half_kg_price": "",
@@ -47,7 +47,7 @@
   {
     "id": 6,
     "title": "boondhi",
-    "image": "images/boondhi.png",
+    "image": "https://res.cloudinary.com/dhjygngv2/image/upload/v1729357628/boondhi_tukpup.png",
     "telugu_title": "బూందీ",
     "price_starting_from": "",
     "half_kg_price": "",
@@ -56,7 +56,7 @@
   {
     "id": 7,
     "title": "Bellam gavvalu",
-    "image": "images/Bellam_Gavvalu.png",
+    "image": "https://res.cloudinary.com/dhjygngv2/image/upload/v1729357627/Bellam_Gavvalu_eyneba.png",
     "telugu_title": "గవ్వలు",
     "price_starting_from": "",
     "half_kg_price": "",
@@ -74,7 +74,7 @@
   {
     "id": 10,
     "title": "Theepi Kommulu",
-    "image": "images/tepikumulu.png",
+    "image": "https://res.cloudinary.com/dhjygngv2/image/upload/v1729357637/tepikumulu_zblzyt.png",
     "telugu_title": "తీపి కొమ్ములు",
     "price_starting_from": "",
     "half_kg_price": "",
@@ -83,7 +83,7 @@
   {
     "id": 11,
     "title": "Boondhi Laddo",
-    "image": "images/laddu.png",
+    "image": "https://res.cloudinary.com/dhjygngv2/image/upload/v1729357633/laddu_si55qz.png",
     "telugu_title": "బూందీ లడ్డు",
     "price_starting_from": "",
     "half_kg_price": "",
@@ -92,7 +92,7 @@
   {
     "id": 12,
     "title": "Karappusa",
-    "image": "images/karappusa.png",
+    "image": "https://res.cloudinary.com/dhjygngv2/image/upload/v1729357632/karappusa_z8omjz.png",
     "telugu_title": "కారప్పుస",
     "price_starting_from": "",
     "half_kg_price": "",
@@ -101,7 +101,7 @@
   {
     "id": 13,
     "title": "Panasa Thonalu",
-    "image": "images/panasa_tonalu.png",
+    "image": "https://res.cloudinary.com/dhjygngv2/image/upload/v1729357634/panasa_tonalu_zhwvwa.png",
     "telugu_title": "పనస తోనాలు",
     "price_starting_from": "",
     "half_kg_price": "",
@@ -110,7 +110,7 @@
   {
     "id": 14,
     "title": "Avakai Pickle",
-    "image": "images/Avakaya.png",
+    "image": "https://res.cloudinary.com/dhjygngv2/image/upload/v1729357628/Avakaya_muaa7t.png",
     "telugu_title": "ఆవకాయ",
     "price_starting_from": "",
     "half_kg_price": "",
@@ -119,7 +119,7 @@
   {
     "id": 15,
     "title": "Tomato Pickle",
-    "image": "images/tomatopickle.png",
+    "image": "https://res.cloudinary.com/dhjygngv2/image/upload/v1729357638/tomatopickle_i6vhvp.png",
     "telugu_title": "టమోటా పచ్చడి",
     "price_starting_from": "",
     "half_kg_price": "",
@@ -128,7 +128,7 @@
   {
     "id": 15,
     "title": "Usirikaya Pickle",
-    "image": "images/usirikaya_pickle.png",
+    "image": "https://res.cloudinary.com/dhjygngv2/image/upload/v1729357230/usirikaya_pickle_nb2zdp.png",
     "telugu_title": "ఉసిరికాయ పచ్చడి",
     "price_starting_from": "",
     "half_kg_price": "",
@@ -137,7 +137,7 @@
   {
     "id": 15,
     "title": "Gongura Pickle",
-    "image": "images/gongurapickle.png",
+    "image": "https://res.cloudinary.com/dhjygngv2/image/upload/v1729357629/gongurapickle_ayhrso.png",
     "telugu_title": "గోంగూర పచ్చడి ",
     "price_starting_from": "",
     "half_kg_price": "",
