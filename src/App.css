@@ -62,8 +62,9 @@ body {
   }
   .caption p {
     text-align: center;
-    font-size: 20px;
+    font-size: 25px;
     color: #283618;
+    font-weight: bold;
   }
   .muggu_img {
     width: 100%;
@@ -107,7 +108,7 @@ body {
   }
   .detail_box {
     width: 70%;
-    height: 95%;
+    height: 90%;
     background: #c2d28b;
     margin-left: 30px;
     position: relative;
@@ -316,7 +317,12 @@ body {
     .detail_box {
       display: flex;
       flex-direction: column;
+      width: 75%;
     }
+    .place_order,.add_to_cart{
+      width: 50%;
+    }
+   
     .detail_img {
       width: 100%;
       height: 40%;
@@ -348,7 +354,9 @@ body {
     .detail_button {
       display: flex;
       justify-content: center;
+      gap: 10px;
     }
+   
   }
   
   @media only screen and (min-width: 600px) and (max-width: 1024px) {
@@ -401,5 +409,6 @@ body {
     select {
       height: 60%;
     }
+   
   }
   
