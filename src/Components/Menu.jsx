@@ -17,7 +17,7 @@ const Menu = () => {
             <a href={url}>
               <div className="card" key={index}>
                 <div className="img_container">
-                  <img width="250" height="220" src={item.image} />
+                  <img width="250" height="220" src={`/${item.image}`} />
                 </div>
                 <div className="recipe_des">
                   <div className="recipe_name">
