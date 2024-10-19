@@ -62,11 +62,13 @@ const CartPage = () => {
             })
           ) : (
             <div className="empty_cart">
-              <img
-                width={300}
-                height={350}
-                src="https://i.ibb.co/dpLX3C9/stock-vector-illustration-of-woman-toy-1040374858-removebg-preview-1-1.png"
-              />
+              <div className="empty_cart_image">
+                <img
+                  width={300}
+                  height={350}
+                  src="https://i.ibb.co/dpLX3C9/stock-vector-illustration-of-woman-toy-1040374858-removebg-preview-1-1.png"
+                />
+              </div>
               <div>
                 <h1>Your cart is empty !!</h1>
               </div>

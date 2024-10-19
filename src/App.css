@@ -295,6 +295,11 @@ body {
     margin-bottom: 15px;
     cursor: pointer;
   }
+  .recipe_quantity_validation{
+    color: red;
+    margin-bottom: 5px;
+    margin-top: 0px;
+  }
   
   @media only screen and (max-width: 768px) {
     .body_container {
@@ -349,14 +354,32 @@ body {
     }
     select {
       width: 100%;
-      margin-bottom: 20px;
+      /* margin-bottom: 20px; */
     }
     .detail_button {
       display: flex;
       justify-content: center;
       gap: 10px;
     }
-   
+
+    .cart_page{
+      width: 100%;
+    }
+    .empty_cart{
+      display: block;
+      height: auto;
+    }
+    .empty_cart div h1{
+      text-align: center;
+      font-size: 30px;
+    }
+    .empty_cart_image{
+      display: flex;
+      justify-content: center;
+    }
+   .cart_card{
+    width: 97%;
+   }
   }
   
   @media only screen and (min-width: 600px) and (max-width: 1024px) {
@@ -373,9 +396,10 @@ body {
       height: 60%;
       margin-left: 70px;
     }
-    select {
+    /* select {
       margin-bottom: 20px;
-    }
+    } */
+    
   }
   
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
