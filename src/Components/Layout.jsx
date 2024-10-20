@@ -21,8 +21,7 @@ const Layout = ({ children }) => {
               <div className="number_badge">{cartData.length}</div>
               <div>
                 <img
-                  width={50}
-                  height={50}
+                  className="cart_btn_image"
                   src="https://i.ibb.co/tJmsBPW/shopping-cart.png"
                 />
               </div>
