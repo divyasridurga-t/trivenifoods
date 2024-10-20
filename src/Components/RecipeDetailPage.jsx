@@ -3,21 +3,14 @@ import Layout from "./Layout";
 import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { addItem } from "../redux/cartSlice";
-import x from "../Utils/x";
+import x from "../Utils/detailPageItems";
 
 const RecipeDetailPage = () => {
   let dispatch = useDispatch();
   let { recipe = "", id = "" } = useParams();
   let [inputValue, setInputValue] = useState("");
-  console.log(inputValue);
-
-  // console.log(recipe, id);
-
   let data_ = x[id];
-
   let price = data_.price;
-
-  console.log();
 
   let [more, setMore] = useState(false);
   let [data, setData] = useState({
@@ -28,13 +21,26 @@ const RecipeDetailPage = () => {
   const [validation, setValidation] = useState(false);
 
   function handleChange(e) {
-    setInputValue(e.target.value);
-    if (e.target.value === "more") {
-      setMore(true);
+    const { name, value } = e.target;
+
+    setInputValue(value);
+
+    // Check if a valid quantity is selected and hide the validation message
+    if (name === "quantity" && value !== "" && value !== "Choose quantity") {
+      setValidation(false); // Hide the validation message if valid quantity is selected
     }
+
+    // If "more" is selected, show the input field for custom quantity
+    if (value === "more") {
+      setMore(true);
+    } else {
+      setMore(false); // Close the custom quantity field if it's not "more"
+    }
+
+    // Update the data state
     setData({
       ...data,
-      [e.target.name]: e.target.value,
+      [name]: value,
     });
   }
 
@@ -51,8 +57,12 @@ const RecipeDetailPage = () => {
   }
 
   function handleAddCartClick(data) {
-    dispatch(addItem(data));
-    !data.quantity ? setValidation(true) : setValidation(false);
+    if (!data.quantity || data.quantity === "Choose quantity") {
+      setValidation(true);
+    } else {
+      setValidation(false);
+      dispatch(addItem(data));
+    }
   }
 
   // let cartData = useSelector((store)=> console.log(store.cart.item));
@@ -64,14 +74,12 @@ const RecipeDetailPage = () => {
           <div className="recipe_detail_bg"></div>
           <div className="detail_box">
             <div className="detail_img">
-              <img
-                className="recipe_img"
-                src="https://www.godavarivantillu.com/cdn/shop/products/bellam-jeedilu-149_305x.jpg?v=1638886880"
-              />
+              <img className="recipe_img" src={data_.image} />
+              <p className="recipe_title">{`${data_.title} / ${data_.telugu_title}`}</p>
+              <p className="recipe_price">{price[inputValue]}</p>
             </div>
 
             <div className="form_">
-              <input className="type_text" value={recipe} type="text" />
               <div>
                 <select onChange={handleChange} name={"quantity"} required>
                   <option>Choose quantity</option>
