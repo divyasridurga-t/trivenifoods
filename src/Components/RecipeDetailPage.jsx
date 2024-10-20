@@ -127,6 +127,13 @@ const RecipeDetailPage = () => {
                   Place Order
                 </button>
               </div>
+              <div>
+                <b>Note : </b> Your order will be redirected to whatsapp as a
+                message.
+                <br />
+                Incase you would like to cancel any of your order do a{" "}
+                <b>delete for everyone</b>.
+              </div>
             </div>
           </div>
         </div>
