@@ -3,10 +3,22 @@ import Layout from "./Layout";
 import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { addItem } from "../redux/cartSlice";
+import x from "../Utils/x";
 
 const RecipeDetailPage = () => {
   let dispatch = useDispatch();
   let { recipe = "", id = "" } = useParams();
+  let [inputValue, setInputValue] = useState("");
+  console.log(inputValue);
+
+  // console.log(recipe, id);
+
+  let data_ = x[id];
+
+  let price = data_.price;
+
+  console.log();
+
   let [more, setMore] = useState(false);
   let [data, setData] = useState({
     recipe_name: recipe,
@@ -16,6 +28,7 @@ const RecipeDetailPage = () => {
   const [validation, setValidation] = useState(false);
 
   function handleChange(e) {
+    setInputValue(e.target.value);
     if (e.target.value === "more") {
       setMore(true);
     }
@@ -34,13 +47,10 @@ const RecipeDetailPage = () => {
     let encoded_msg = encodeURIComponent(message);
     let phoneNumber = "918985755632";
     let url = `https://wa.me/${phoneNumber}?text=${encoded_msg}`;
-    console.log(url);
-    
     window.open(url, "_blank");
   }
 
   function handleAddCartClick(data) {
-    console.log(data.quantity);
     dispatch(addItem(data));
     !data.quantity ? setValidation(true) : setValidation(false);
   }
@@ -59,6 +69,7 @@ const RecipeDetailPage = () => {
                 src="https://www.godavarivantillu.com/cdn/shop/products/bellam-jeedilu-149_305x.jpg?v=1638886880"
               />
             </div>
+
             <div className="form_">
               <input className="type_text" value={recipe} type="text" />
               <div>
