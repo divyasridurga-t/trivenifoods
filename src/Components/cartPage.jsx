@@ -6,6 +6,11 @@ const CartPage = () => {
   let dispatch = useDispatch();
   let cartData = useSelector((store) => store.cart.item);
 
+  // let x= localStorage.getItem('cart')
+
+  // console.log(JSON.parse(x),'???????????????????');
+  
+
   function placeOrderClick() {
     let data = cartData.map((item) => {
       let name = item.recipe_name.toUpperCase().replace("-", " ");
