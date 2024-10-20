@@ -7,9 +7,15 @@ const CartPage = () => {
   let cartData = useSelector((store) => store.cart.item);
 
   function placeOrderClick() {
-    let listMsg = `Product : ###\n Quantity : ### \n Customizations : ####`;
     let data = cartData.map((item) => {
-      return `Product : ${item.recipe_name}\n Quantity : ${item.quantity} \n Customizations : ${item.customizations}`;
+      let name = item.recipe_name.toUpperCase().replace("-", " ");
+      let quantity =
+        item.quantity == "half"
+          ? "1/2"
+          : item.quantity == "quater"
+          ? "1/4"
+          : item.quantity;
+      return `Product : ${name}\n Quantity : ${quantity} Kg \n Customizations : ${item.customizations}`;
     });
 
     let wData = data.join("\n\n\n");
@@ -33,6 +39,12 @@ const CartPage = () => {
         <div className="cart_page">
           {cartData.length ? (
             cartData.map((item, index) => {
+              let quantity =
+                item.quantity == "half"
+                  ? "1/2"
+                  : item.quantity == "quater"
+                  ? "1/4"
+                  : item.quantity;
               return (
                 <>
                   <div className="cart_card">
@@ -47,7 +59,7 @@ const CartPage = () => {
                       <h2>
                         {item.recipe_name.toUpperCase().replace("-", " ")}
                       </h2>
-                      <h2>{item.quantity}</h2>
+                      <h2>{quantity} Kg </h2>
                       <h2>{item.customizations}</h2>
                       <button
                         onClick={() => handleRemoveItem(item.recipe_name)}

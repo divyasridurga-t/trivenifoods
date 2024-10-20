@@ -9,15 +9,10 @@ const RecipeDetailPage = () => {
   let dispatch = useDispatch();
   let { recipe = "", id = "" } = useParams();
   let [inputValue, setInputValue] = useState("");
-  console.log(inputValue);
-
-  // console.log(recipe, id);
 
   let data_ = x[id];
 
   let price = data_.price;
-
-  console.log();
 
   let [more, setMore] = useState(false);
   let [data, setData] = useState({
