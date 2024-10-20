@@ -1,15 +1,8 @@
 import Layout from "./Layout";
-import { useSelector, useDispatch } from "react-redux";
-import { removeItem, clearCart } from "../redux/cartSlice";
+import { useCartContext } from "../hooks/useCartContext";
 
 const CartPage = () => {
-  let dispatch = useDispatch();
-  let cartData = useSelector((store) => store.cart.item);
-
-  // let x= localStorage.getItem('cart')
-
-  // console.log(JSON.parse(x),'???????????????????');
-  
+  let { cartData, setCartData } = useCartContext();
 
   function placeOrderClick() {
     let data = cartData.map((item) => {
@@ -28,14 +21,20 @@ const CartPage = () => {
     let phoneNumber = "918985755632";
     let url = `https://wa.me/${phoneNumber}?text=${encoded_msg}`;
     window.open(url, "_blank");
+    setCartData([])
   }
 
-  function handleRemoveItem(item) {
-    dispatch(removeItem(item));
+  function handleRemoveItem(name) {
+    let filteredData = cartData.filter((key) => {
+      if (key.recipe_name != name) {
+        return key;
+      }
+    });
+    setCartData(filteredData);
   }
 
   function clearCartClick() {
-    dispatch(clearCart());
+    setCartData([]);
   }
 
   return (

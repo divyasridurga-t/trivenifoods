@@ -1,18 +1,14 @@
 import { useState } from "react";
 import Layout from "./Layout";
 import { useParams } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
-import { addItem } from "../redux/cartSlice";
-import x from "../Utils/x";
+import { useCartContext } from "../hooks/useCartContext.jsx";
 
 const RecipeDetailPage = () => {
-  let dispatch = useDispatch();
   let { recipe = "", id = "" } = useParams();
   let [inputValue, setInputValue] = useState("");
+  let { setCartData } = useCartContext();
 
-  let data_ = x[id];
 
-  let price = data_.price;
 
   let [more, setMore] = useState(false);
   let [data, setData] = useState({
@@ -46,11 +42,13 @@ const RecipeDetailPage = () => {
   }
 
   function handleAddCartClick(data) {
-    dispatch(addItem(data));
+    setCartData((prev) => {
+      let latestCart = [...prev, data];
+      localStorage.setItem("cart", JSON.stringify(latestCart));
+      return latestCart;
+    });
     !data.quantity ? setValidation(true) : setValidation(false);
   }
-
-  // let cartData = useSelector((store)=> console.log(store.cart.item));
 
   return (
     <>
