@@ -17,6 +17,7 @@ const RecipeDetailPage = () => {
     recipe_name: recipe,
     quantity: "",
     customizations: "",
+    image: "",
   });
   const [validation, setValidation] = useState(false);
 
@@ -41,6 +42,7 @@ const RecipeDetailPage = () => {
     setData({
       ...data,
       [name]: value,
+      image: data_.image,
     });
   }
 

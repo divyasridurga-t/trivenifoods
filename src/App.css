@@ -250,11 +250,15 @@ select {
   display: flex;
   color: #283618;
   justify-content: space-evenly;
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
 }
 .cart_cart_img {
   display: flex;
   align-items: center;
+  width: 50%;
+}
+.cart_image_desc{
+  width: 50%;
 }
 .cart_card h2 {
   margin-bottom: 0px;

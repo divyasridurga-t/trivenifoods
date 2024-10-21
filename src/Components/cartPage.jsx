@@ -21,7 +21,7 @@ const CartPage = () => {
     let phoneNumber = "918985755632";
     let url = `https://wa.me/${phoneNumber}?text=${encoded_msg}`;
     window.open(url, "_blank");
-    setCartData([])
+    setCartData([]);
   }
 
   function handleRemoveItem(name) {
@@ -53,13 +53,9 @@ const CartPage = () => {
                 <>
                   <div className="cart_card">
                     <div className="cart_cart_img">
-                      <img
-                        width={150}
-                        height={120}
-                        src="https://www.myspicykitchen.net/wp-content/uploads/2019/10/Sunnundalu.jpg"
-                      />
+                      <img width={150} height={120} src={item.image} />
                     </div>
-                    <div>
+                    <div className="cart_image_desc">
                       <h2>
                         {item.recipe_name.toUpperCase().replace("-", " ")}
                       </h2>
