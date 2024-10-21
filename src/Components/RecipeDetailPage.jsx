@@ -11,6 +11,9 @@ const RecipeDetailPage = () => {
   let [inputValue, setInputValue] = useState("");
   let data_ = x[id];
   let price = data_.price;
+  let quantity = data_.quantity;
+
+  console.log(quantity);
 
   let [more, setMore] = useState(false);
   let [data, setData] = useState({
@@ -22,19 +25,14 @@ const RecipeDetailPage = () => {
 
   function handleChange(e) {
     const { name, value } = e.target;
-
     setInputValue(value);
-
-    // Check if a valid quantity is selected and hide the validation message
     if (name === "quantity" && value !== "" && value !== "Choose quantity") {
-      setValidation(false); // Hide the validation message if valid quantity is selected
+      setValidation(false);
     }
-
-    // If "more" is selected, show the input field for custom quantity
     if (value === "more") {
       setMore(true);
     } else {
-      setMore(false); // Close the custom quantity field if it's not "more"
+      setMore(false);
     }
 
     // Update the data state
@@ -65,8 +63,6 @@ const RecipeDetailPage = () => {
     }
   }
 
-  // let cartData = useSelector((store)=> console.log(store.cart.item));
-
   return (
     <>
       <Layout>
@@ -83,12 +79,11 @@ const RecipeDetailPage = () => {
               <div>
                 <select onChange={handleChange} name={"quantity"} required>
                   <option>Choose quantity</option>
-                  <option value={"quater"}>1/4 kg</option>
-                  <option value={"half"}>1/2 kg</option>
-                  <option value={"1"}>1 kg</option>
-                  <option value={"2"}>2 kg</option>
-                  <option value={"3"}>3 kg</option>
-                  <option value={"more"}>more...</option>
+                  {Object.entries(quantity).map(([key, value]) => (
+                    <option key={key} value={key}>
+                      {value}
+                    </option>
+                  ))}
                 </select>
                 {validation && (
                   <p className="recipe_quantity_validation">

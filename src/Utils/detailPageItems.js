@@ -4,7 +4,14 @@ const data = {
     telugu_title: "చక్రాలు",
     image:
       "https://res.cloudinary.com/dhjygngv2/image/upload/v1729357628/chekaralu_nzt2mo.png",
-    quantity: "",
+    quantity: {
+      half: "1/2 kg",
+      quater: "1/4 kg",
+      1: "1 kg",
+      2: "2 kg",
+      3: "3 kg",
+      more: "more ...",
+    },
     price: {
       half: "200 ₹",
       quater: "100 ₹",
@@ -19,7 +26,14 @@ const data = {
     telugu_title: "చెక్కలు",
     image:
       "https://res.cloudinary.com/dnmf69odi/image/upload/v1729428568/chekkalu_jiovga-removebg-preview_jwlkzh.png",
-    quantity: "",
+    quantity: {
+      half: "1/2 kg",
+      quater: "1/4 kg",
+      1: "1 kg",
+      2: "2 kg",
+      3: "3 kg",
+      more: "more ...",
+    },
     price: {
       half: "200 ₹",
       quater: "100 ₹",
@@ -34,7 +48,14 @@ const data = {
     telugu_title: "రిబ్బన్ పకోడీ",
     image:
       "https://res.cloudinary.com/dnmf69odi/image/upload/v1729428138/ribbon_pakodi_n858lk-removebg-preview_ga4cur.png",
-    quantity: "",
+    quantity: {
+      half: "1/2 kg",
+      quater: "1/4 kg",
+      1: "1 kg",
+      2: "2 kg",
+      3: "3 kg",
+      more: "more ...",
+    },
     price: {
       half: "200 ₹",
       quater: "100 ₹",
@@ -49,14 +70,18 @@ const data = {
     telugu_title: "సున్నుండలు",
     image:
       "https://res.cloudinary.com/dhjygngv2/image/upload/v1729357636/sunnundalu_nr5oxk.png",
-    quantity: "",
+    quantity: {
+      half: "1/2 kg",
+      quater: "1/4 kg",
+      1: "1 kg",
+      2: "2 kg",
+      3: "3 kg",
+      more: "more ...",
+    },
     price: {
-      half: "200 ₹",
-      quater: "100 ₹",
-      1: "400 ₹",
-      2: "800 ₹",
-      3: "1200 ₹",
-      4: "1600 ₹",
+      5: "100 ₹",
+      10: "200 ₹",
+      20: "350 ₹",
     },
   },
   5: {
@@ -64,7 +89,14 @@ const data = {
     telugu_title: "బెల్లం నువ్వుల లడ్డు",
     image:
       "https://res.cloudinary.com/dhjygngv2/image/upload/v1729357633/Nuvulaladdu_berjog.png",
-    quantity: "",
+    quantity: {
+      half: "1/2 kg",
+      quater: "1/4 kg",
+      1: "1 kg",
+      2: "2 kg",
+      3: "3 kg",
+      more: "more ...",
+    },
     price: {
       half: "200 ₹",
       quater: "100 ₹",
@@ -79,7 +111,14 @@ const data = {
     telugu_title: "బూందీ",
     image:
       "https://res.cloudinary.com/dnmf69odi/image/upload/v1729428500/boondhi_tukpup-removebg-preview_ucfjxz.png",
-    quantity: "",
+    quantity: {
+      half: "1/2 kg",
+      quater: "1/4 kg",
+      1: "1 kg",
+      2: "2 kg",
+      3: "3 kg",
+      more: "more ...",
+    },
     price: {
       half: "200 ₹",
       quater: "100 ₹",
@@ -94,7 +133,14 @@ const data = {
     telugu_title: "గవ్వలు",
     image:
       "https://res.cloudinary.com/dhjygngv2/image/upload/v1729357627/Bellam_Gavvalu_eyneba.png",
-    quantity: "",
+    quantity: {
+      half: "1/2 kg",
+      quater: "1/4 kg",
+      1: "1 kg",
+      2: "2 kg",
+      3: "3 kg",
+      more: "more ...",
+    },
     price: {
       half: "200 ₹",
       quater: "100 ₹",
@@ -109,7 +155,14 @@ const data = {
     telugu_title: "కారం గవ్వలు",
     image:
       "https://res.cloudinary.com/dhjygngv2/image/upload/v1729357629/Karam_Gavvalu_ezhm2i.png",
-    quantity: "",
+    quantity: {
+      half: "1/2 kg",
+      quater: "1/4 kg",
+      1: "1 kg",
+      2: "2 kg",
+      3: "3 kg",
+      more: "more ...",
+    },
     price: {
       half: "200 ₹",
       quater: "100 ₹",
@@ -124,7 +177,14 @@ const data = {
     telugu_title: "తీపి కొమ్ములు",
     image:
       "https://res.cloudinary.com/dhjygngv2/image/upload/v1729357637/tepikumulu_zblzyt.png",
-    quantity: "",
+    quantity: {
+      half: "1/2 kg",
+      quater: "1/4 kg",
+      1: "1 kg",
+      2: "2 kg",
+      3: "3 kg",
+      more: "more ...",
+    },
     price: {
       half: "200 ₹",
       quater: "100 ₹",
@@ -139,7 +199,14 @@ const data = {
     title: "Boondhi Laddo",
     image:
       "https://res.cloudinary.com/dhjygngv2/image/upload/v1729357633/laddu_si55qz.png",
-    quantity: "",
+    quantity: {
+      half: "1/2 kg",
+      quater: "1/4 kg",
+      1: "1 kg",
+      2: "2 kg",
+      3: "3 kg",
+      more: "more ...",
+    },
     price: {
       half: "200 ₹",
       quater: "100 ₹",
@@ -154,7 +221,14 @@ const data = {
     telugu_title: "కారప్పుస",
     image:
       "https://res.cloudinary.com/dhjygngv2/image/upload/v1729357632/karappusa_z8omjz.png",
-    quantity: "",
+    quantity: {
+      half: "1/2 kg",
+      quater: "1/4 kg",
+      1: "1 kg",
+      2: "2 kg",
+      3: "3 kg",
+      more: "more ...",
+    },
     price: {
       half: "200 ₹",
       quater: "100 ₹",
@@ -169,7 +243,14 @@ const data = {
     telugu_title: "పనస తోనాలు",
     image:
       "https://res.cloudinary.com/dnmf69odi/image/upload/v1729428871/PANASA_THONALU-removebg-preview_1_osmero.png",
-    quantity: "",
+    quantity: {
+      half: "1/2 kg",
+      quater: "1/4 kg",
+      1: "1 kg",
+      2: "2 kg",
+      3: "3 kg",
+      more: "more ...",
+    },
     price: {
       half: "200 ₹",
       quater: "100 ₹",
@@ -184,7 +265,14 @@ const data = {
     telugu_title: "ఆవకాయ",
     image:
       "https://res.cloudinary.com/dhjygngv2/image/upload/v1729357628/Avakaya_muaa7t.png",
-    quantity: "",
+    quantity: {
+      half: "1/2 kg",
+      quater: "1/4 kg",
+      1: "1 kg",
+      2: "2 kg",
+      3: "3 kg",
+      more: "more ...",
+    },
     price: {
       half: "200 ₹",
       quater: "100 ₹",
@@ -199,7 +287,14 @@ const data = {
     telugu_title: "టమోటా పచ్చడి",
     image:
       "https://res.cloudinary.com/dhjygngv2/image/upload/v1729357638/tomatopickle_i6vhvp.png",
-    quantity: "",
+    quantity: {
+      half: "1/2 kg",
+      quater: "1/4 kg",
+      1: "1 kg",
+      2: "2 kg",
+      3: "3 kg",
+      more: "more ...",
+    },
     price: {
       half: "200 ₹",
       quater: "100 ₹",
@@ -214,7 +309,14 @@ const data = {
     telugu_title: "ఉసిరికాయ పచ్చడి",
     image:
       "https://res.cloudinary.com/dhjygngv2/image/upload/v1729357230/usirikaya_pickle_nb2zdp.png",
-    quantity: "",
+    quantity: {
+      half: "1/2 kg",
+      quater: "1/4 kg",
+      1: "1 kg",
+      2: "2 kg",
+      3: "3 kg",
+      more: "more ...",
+    },
     price: {
       half: "200 ₹",
       quater: "100 ₹",
@@ -226,10 +328,61 @@ const data = {
   },
   17: {
     title: "Gongura Pickle",
-    telugu_title: "గోంగూర పచ్చడి ",
+    telugu_title: "గోంగూర పచ్చడి",
     image:
       "https://res.cloudinary.com/dhjygngv2/image/upload/v1729357629/gongurapickle_ayh₹o.png",
-    quantity: "",
+    quantity: {
+      half: "1/2 kg",
+      quater: "1/4 kg",
+      1: "1 kg",
+      2: "2 kg",
+      3: "3 kg",
+      more: "more ...",
+    },
+    price: {
+      half: "200 ₹",
+      quater: "100 ₹",
+      1: "400 ₹",
+      2: "800 ₹",
+      3: "1200 ₹",
+      4: "1600 ₹",
+    },
+  },
+  18: {
+    title: "Cauliflower Pickle",
+    telugu_title: "కాలీఫ్లవర్ ఊరగాయ",
+    image:
+      "https://res.cloudinary.com/dnmf69odi/image/upload/v1729532224/Cauliflower-Pickle-removebg-preview_nrsmwz.png",
+    quantity: {
+      half: "1/2 kg",
+      quater: "1/4 kg",
+      1: "1 kg",
+      2: "2 kg",
+      3: "3 kg",
+      more: "more ...",
+    },
+    price: {
+      half: "200 ₹",
+      quater: "100 ₹",
+      1: "400 ₹",
+      2: "800 ₹",
+      3: "1200 ₹",
+      4: "1600 ₹",
+    },
+  },
+  18: {
+    title: "pandu mirchi pickle",
+    telugu_title: "పండు మిర్చి పచ్చడి",
+    image:
+      "https://res.cloudinary.com/dnmf69odi/image/upload/v1729532824/pandumirchi1-e1720236092225-removebg-preview_fprlod.png",
+    quantity: {
+      half: "1/2 kg",
+      quater: "1/4 kg",
+      1: "1 kg",
+      2: "2 kg",
+      3: "3 kg",
+      more: "more ...",
+    },
     price: {
       half: "200 ₹",
       quater: "100 ₹",

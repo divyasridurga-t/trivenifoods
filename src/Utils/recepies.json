@@ -117,7 +117,7 @@
     "kg_price": ""
   },
   {
-    "id": 15,
+    "id": 16,
     "title": "Tomato Pickle",
     "image": "https://res.cloudinary.com/dhjygngv2/image/upload/v1729357638/tomatopickle_i6vhvp.png",
     "telugu_title": "టమోటా పచ్చడి",
@@ -126,7 +126,7 @@
     "kg_price": ""
   },
   {
-    "id": 15,
+    "id": 17,
     "title": "Usirikaya Pickle",
     "image": "https://res.cloudinary.com/dhjygngv2/image/upload/v1729357230/usirikaya_pickle_nb2zdp.png",
     "telugu_title": "ఉసిరికాయ పచ్చడి",
@@ -135,10 +135,28 @@
     "kg_price": ""
   },
   {
-    "id": 15,
+    "id": 18,
     "title": "Gongura Pickle",
     "image": "https://res.cloudinary.com/dhjygngv2/image/upload/v1729357629/gongurapickle_ayhrso.png",
     "telugu_title": "గోంగూర పచ్చడి ",
+    "price_starting_from": "",
+    "half_kg_price": "",
+    "kg_price": ""
+  },
+  {
+    "id": 19,
+    "title": "Cauliflower Pickle",
+    "image": "https://res.cloudinary.com/dnmf69odi/image/upload/v1729532224/Cauliflower-Pickle-removebg-preview_nrsmwz.png",
+    "telugu_title": "కాలీఫ్లవర్ ఊరగాయ",
+    "price_starting_from": "",
+    "half_kg_price": "",
+    "kg_price": ""
+  },
+  {
+    "id": 20,
+    "title": "pandu mirchi pickle",
+    "image": "https://res.cloudinary.com/dnmf69odi/image/upload/v1729532824/pandumirchi1-e1720236092225-removebg-preview_fprlod.png",
+    "telugu_title": "పండు మిర్చి పచ్చడి",
     "price_starting_from": "",
     "half_kg_price": "",
     "kg_price": ""
