@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Chakraalu",
-    "image": "https://res.cloudinary.com/dhjygngv2/image/upload/v1729357628/chekaralu_nzt2mo.png",
+    "image": "https://res.cloudinary.com/dhjygngv2/image/upload/v1729532105/senaga_podi-removebg-preview_v1u0te.png",
     "telugu_title": "చక్రాలు",
     "price_starting_from": "",
     "half_kg_price": "",
@@ -126,7 +126,7 @@
     "kg_price": ""
   },
   {
-    "id": 15,
+    "id": 16,
     "title": "Usirikaya Pickle",
     "image": "https://res.cloudinary.com/dhjygngv2/image/upload/v1729357230/usirikaya_pickle_nb2zdp.png",
     "telugu_title": "ఉసిరికాయ పచ్చడి",
@@ -135,10 +135,82 @@
     "kg_price": ""
   },
   {
-    "id": 15,
+    "id": 17,
     "title": "Gongura Pickle",
     "image": "https://res.cloudinary.com/dhjygngv2/image/upload/v1729357629/gongurapickle_ayhrso.png",
     "telugu_title": "గోంగూర పచ్చడి ",
+    "price_starting_from": "",
+    "half_kg_price": "",
+    "kg_price": ""
+  },
+  {
+    "id": 18,
+    "title": "Kobbari Kaaram Podi",
+    "image": "https://res.cloudinary.com/dhjygngv2/image/upload/v1729532719/kobbari_karam_podi-removebg-preview_xocv8u.png ",
+    "telugu_title": "కొబ్బరి కారం పొడి",
+    "price_starting_from": "",
+    "half_kg_price": "",
+    "kg_price": ""
+  },
+  {
+    "id": 19,
+    "title": "Kaarappodi",
+    "image": "https://res.cloudinary.com/dhjygngv2/image/upload/v1729532672/karappodi-removebg-preview_arxnm0.png ",
+    "telugu_title": "కారప్పొడి",
+    "price_starting_from": "",
+    "half_kg_price": "",
+    "kg_price": ""
+  },
+  {
+    "id": 20,
+    "title": "Pappula Podi",
+    "image": "https://res.cloudinary.com/dhjygngv2/image/upload/v1729532574/mix_pappula_podi-removebg-preview_rmfabf.png",
+    "telugu_title": "పప్పుల పొడి",
+    "price_starting_from": "",
+    "half_kg_price": "",
+    "kg_price": ""
+  },
+  {
+    "id": 21,
+    "title": "Karivepaku Podi",
+    "image": "https://res.cloudinary.com/dhjygngv2/image/upload/v1729532532/curry_leaf_podi-removebg-preview_k8avqe.png ",
+    "telugu_title": "కరివేపాకు పొడి",
+    "price_starting_from": "",
+    "half_kg_price": "",
+    "kg_price": ""
+  },
+  {
+    "id": 22,
+    "title": "Munagaaku Podi",
+    "image": "https://res.cloudinary.com/dhjygngv2/image/upload/v1729532205/munagaaku_podi-removebg-preview_fugycd.png",
+    "telugu_title": "మునగాకు పొడి",
+    "price_starting_from": "",
+    "half_kg_price": "",
+    "kg_price": ""
+  },
+  {
+    "id": 23,
+    "title": "Avisa Ginjala Podi",
+    "image": "https://res.cloudinary.com/dhjygngv2/image/upload/v1729532159/avisa_ginjala_podi-removebg-preview_udq2zy.png",
+    "telugu_title": "అవిసె గింజల పొడి",
+    "price_starting_from": "",
+    "half_kg_price": "",
+    "kg_price": ""
+  },
+  {
+    "id": 24,
+    "title": "Senaga Podi",
+    "image": "https://res.cloudinary.com/dhjygngv2/image/upload/v1729532105/senaga_podi-removebg-preview_v1u0te.png",
+    "telugu_title": "సెనగ పొడి",
+    "price_starting_from": "",
+    "half_kg_price": "",
+    "kg_price": ""
+  },
+  {
+    "id": 25,
+    "title": "Rasam Powder",
+    "image": "https://res.cloudinary.com/dhjygngv2/image/upload/v1729532024/Rasam-Powder-removebg-preview_b6se3f.png",
+    "telugu_title": "రసం పొడి",
     "price_starting_from": "",
     "half_kg_price": "",
     "kg_price": ""
