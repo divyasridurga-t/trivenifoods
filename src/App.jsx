@@ -1,15 +1,14 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Components/Home";
-import { Provider } from "react-redux";
-import shopStore from "./redux/shopStore";
 import RecipeDetailPage from "./Components/RecipeDetailPage";
 import CartPage from "./Components/cartPage";
+import { CartProvider } from "./hooks/useCartContext";
 
 function App() {
   return (
     <>
-      <Provider store={shopStore}>
+      <CartProvider>
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -17,7 +16,7 @@ function App() {
             <Route path="/cart" element={<CartPage />} />
           </Routes>
         </BrowserRouter>
-      </Provider>
+      </CartProvider>
     </>
   );
 }

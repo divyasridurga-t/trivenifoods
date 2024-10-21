@@ -1,14 +1,14 @@
 import { useState } from "react";
 import Layout from "./Layout";
 import { useParams } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
-import { addItem } from "../redux/cartSlice";
+import { useCartContext } from "../hooks/useCartContext.jsx";
 import x from "../Utils/detailPageItems";
 
 const RecipeDetailPage = () => {
-  let dispatch = useDispatch();
   let { recipe = "", id = "" } = useParams();
   let [inputValue, setInputValue] = useState("");
+  let { setCartData } = useCartContext();
+
   let data_ = x[id];
   let price = data_.price;
   let quantity = data_.quantity;
@@ -20,6 +20,7 @@ const RecipeDetailPage = () => {
     recipe_name: recipe,
     quantity: "",
     customizations: "",
+    image: "",
   });
   const [validation, setValidation] = useState(false);
 
@@ -39,6 +40,7 @@ const RecipeDetailPage = () => {
     setData({
       ...data,
       [name]: value,
+      image: data_.image,
     });
   }
 
@@ -55,11 +57,15 @@ const RecipeDetailPage = () => {
   }
 
   function handleAddCartClick(data) {
+    setCartData((prev) => {
+      let latestCart = [...prev, data];
+      localStorage.setItem("cart", JSON.stringify(latestCart));
+      return latestCart;
+    });
     if (!data.quantity || data.quantity === "Choose quantity") {
       setValidation(true);
     } else {
       setValidation(false);
-      dispatch(addItem(data));
     }
   }
 
@@ -121,6 +127,13 @@ const RecipeDetailPage = () => {
                 <button onClick={placeOrder} className="place_order">
                   Place Order
                 </button>
+              </div>
+              <div>
+                <b>Note : </b> Your order will be redirected to whatsapp as a
+                message.
+                <br />
+                Incase you would like to cancel any of your order do a{" "}
+                <b>delete for everyone</b>.
               </div>
             </div>
           </div>

@@ -1,13 +1,12 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import Caption from "./Caption";
-import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { useCartContext } from "../hooks/useCartContext";
 
 const Layout = ({ children }) => {
-  let cartData = useSelector((store) => store.cart.item);
-
+  let { cartData } = useCartContext();
   return (
     <>
       <div className="container">
