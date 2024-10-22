@@ -143,13 +143,14 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 95%;
+  height: 100%;
   width: 40%;
 }
 
 .recipe_img {
+  margin-top: 10px;
   width: 18rem;
-  height: 17rem;
+  height: 16em;
   display: flex;
   border-radius: 15px;
 }
@@ -257,7 +258,7 @@ select {
   align-items: center;
   width: 50%;
 }
-.cart_image_desc{
+.cart_image_desc {
   width: 50%;
 }
 .cart_card h2 {
@@ -479,6 +480,3 @@ select {
     height: 60%;
   }
 }
-
-
-

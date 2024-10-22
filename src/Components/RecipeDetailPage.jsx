@@ -13,8 +13,6 @@ const RecipeDetailPage = () => {
   let price = data_.price;
   let quantity = data_.quantity;
 
-  console.log(quantity);
-
   let [more, setMore] = useState(false);
   let [data, setData] = useState({
     recipe_name: recipe,
@@ -57,11 +55,12 @@ const RecipeDetailPage = () => {
   }
 
   function handleAddCartClick(data) {
-    setCartData((prev) => {
-      let latestCart = [...prev, data];
-      localStorage.setItem("cart", JSON.stringify(latestCart));
-      return latestCart;
-    });
+    !data.quantity ||
+      setCartData((prev) => {
+        let latestCart = [...prev, data];
+        localStorage.setItem("cart", JSON.stringify(latestCart));
+        return latestCart;
+      });
     if (!data.quantity || data.quantity === "Choose quantity") {
       setValidation(true);
     } else {
