@@ -109,7 +109,7 @@ const CartPage = () => {
           )}
           {cartData.length ? (
             <>
-              <h3 style={{ textAlign: "center" }}>Total price : {price}</h3>
+              <h3 style={{ textAlign: "center" }}>Total price : ₹{price}</h3>
               <div className="cart_place_order_btn">
                 <div>
                   <button onClick={placeOrderClick} className="place_order_btn">
