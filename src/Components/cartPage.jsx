@@ -24,7 +24,7 @@ const CartPage = () => {
           : item.quantity == "quater"
           ? "1/4"
           : item.quantity;
-      return `Product : ${name}\nQuantity : ${quantity} Kg \nPrice: ${
+      return `Product : ${name}\nQuantity : ${quantity} \nPrice: ${
         item.price
       } \nCustomizations : ${
         item.customizations ? item.customizations : "No customizations"
@@ -79,7 +79,7 @@ const CartPage = () => {
                         {item.recipe_name.toUpperCase().replace("-", " ")}
                       </h2>
                       <h2>
-                        {quantity} Kg - {item.price}
+                        {quantity} - {item.price}
                       </h2>
                       <h2>{item.customizations}</h2>
                       <button

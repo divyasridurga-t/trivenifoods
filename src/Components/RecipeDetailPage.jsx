@@ -53,7 +53,7 @@ const RecipeDetailPage = () => {
   function placeOrder() {
     let message = `Product : ${data.recipe_name
       .toUpperCase()
-      .replaceAll("-", " ")}\nQuantity : ${data.quantity} Kg \nPrice : ${
+      .replaceAll("-", " ")}\nQuantity : ${quantity[inputValue]} \nPrice : ${
       data.price
     } \nCustomizations : ${
       data.customizations ? data.customizations : "no customizations"
@@ -67,7 +67,7 @@ const RecipeDetailPage = () => {
   function handleAddCartClick(data) {
     !data.quantity ||
       setCartData((prev) => {
-        let latestCart = [...prev, data];
+        let latestCart = [...prev, { ...data, quantity: quantity[inputValue] }];
         localStorage.setItem("cart", JSON.stringify(latestCart));
         toast("item added to the cart", {
           position: "top-right",

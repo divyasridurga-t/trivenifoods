@@ -254,8 +254,8 @@ const data = {
     image:
       "https://res.cloudinary.com/dhjygngv2/image/upload/v1729357628/Avakaya_muaa7t.png",
     quantity: {
-      1: "500 grams",
-      2: "750 grams",
+      1: "250 grams",
+      2: "500 grams",
       3: "1 kg",
     },
     price: {
@@ -270,8 +270,8 @@ const data = {
     image:
       "https://res.cloudinary.com/dhjygngv2/image/upload/v1729357638/tomatopickle_i6vhvp.png",
     quantity: {
-      1: "500 grams",
-      2: "750 grams",
+      1: "250 grams",
+      2: "500 grams",
       3: "1 kg",
     },
     price: {
@@ -286,8 +286,8 @@ const data = {
     image:
       "https://res.cloudinary.com/dhjygngv2/image/upload/v1729357230/usirikaya_pickle_nb2zdp.png",
     quantity: {
-      1: "500 grams",
-      2: "750 grams",
+      1: "250 grams",
+      2: "500 grams",
       3: "1 kg",
     },
     price: {
@@ -302,8 +302,8 @@ const data = {
     image:
       "https://res.cloudinary.com/dhjygngv2/image/upload/v1729357629/gongurapickle_ayhrso.png",
     quantity: {
-      1: "500 grams",
-      2: "750 grams",
+      1: "250 grams",
+      2: "500 grams",
       3: "1 kg",
     },
     price: {
@@ -318,8 +318,8 @@ const data = {
     image:
       "https://res.cloudinary.com/dnmf69odi/image/upload/v1729532224/Cauliflower-Pickle-removebg-preview_nrsmwz.png",
     quantity: {
-      1: "500 grams",
-      2: "750 grams",
+      1: "250 grams",
+      2: "500 grams",
       3: "1 kg",
     },
     price: {
@@ -334,8 +334,8 @@ const data = {
     image:
       "https://res.cloudinary.com/dnmf69odi/image/upload/v1729532824/pandumirchi1-e1720236092225-removebg-preview_fprlod.png",
     quantity: {
-      1: "500 grams",
-      2: "750 grams",
+      1: "250 grams",
+      2: "500 grams",
       3: "1 kg",
     },
     price: {
