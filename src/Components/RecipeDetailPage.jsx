@@ -71,7 +71,7 @@ const RecipeDetailPage = () => {
         localStorage.setItem("cart", JSON.stringify(latestCart));
         toast("item added to the cart", {
           position: "top-right",
-          autoClose: 3000,
+          autoClose: 1500,
           hideProgressBar: false,
           closeOnClick: true,
           pauseOnHover: true,
