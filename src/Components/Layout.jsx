@@ -28,7 +28,9 @@ const Layout = ({ children }) => {
             </Link>
           </div>
         )}
-
+        <div className="muggu_img_footer">
+          
+        </div>
         <Footer />
       </div>
     </>
