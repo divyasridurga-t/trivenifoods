@@ -67,24 +67,26 @@ const RecipeDetailPage = () => {
       setCartData((prev) => {
         let latestCart = [...prev, data];
         localStorage.setItem("cart", JSON.stringify(latestCart));
+        toast("item added to the cart", {
+          position: "top-right",
+          autoClose: 3000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+          type: "success",
+        });
         return latestCart;
+
       });
     if (!data.quantity || data.quantity === "Choose quantity") {
       setValidation(true);
     } else {
       setValidation(false);
     }
-    toast("item added to the cart", {
-      position: "top-right",
-      autoClose: 3000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "light",
-      type: "success",
-    });
+    
   }
 
   return (
