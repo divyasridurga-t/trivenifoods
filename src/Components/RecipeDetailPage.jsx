@@ -19,6 +19,7 @@ const RecipeDetailPage = () => {
     quantity: "",
     customizations: "",
     image: "",
+    price:""
   });
   const [validation, setValidation] = useState(false);
 
@@ -39,6 +40,7 @@ const RecipeDetailPage = () => {
       ...data,
       [name]: value,
       image: data_.image,
+      price:data_.price[value]
     });
   }
 

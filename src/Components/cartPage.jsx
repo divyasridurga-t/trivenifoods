@@ -13,7 +13,7 @@ const CartPage = () => {
           : item.quantity == "quater"
           ? "1/4"
           : item.quantity;
-      return `Product : ${name}\n Quantity : ${quantity} Kg \n Customizations : ${item.customizations}`;
+      return `Product : ${name}\n Quantity : ${quantity} Kg \n Price: ${item.price} \n Customizations : ${item.customizations}`;
     });
 
     let wData = data.join("\n\n\n");
@@ -59,7 +59,7 @@ const CartPage = () => {
                       <h2>
                         {item.recipe_name.toUpperCase().replace("-", " ")}
                       </h2>
-                      <h2>{quantity} Kg </h2>
+                      <h2>{quantity} Kg - {item.price}</h2>
                       <h2>{item.customizations}</h2>
                       <button
                         onClick={() => handleRemoveItem(item.recipe_name)}
