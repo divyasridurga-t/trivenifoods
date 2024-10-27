@@ -56,7 +56,7 @@ const RecipeDetailPage = () => {
       .replaceAll("-", " ")}\nQuantity : ${quantity[inputValue]} \nPrice : ${
       data.price
     } \nCustomizations : ${
-      data.customizations ? data.customizations : "no customizations"
+      data.customizations ? data.customizations : "No customizations"
     }`;
     let encoded_msg = encodeURIComponent(message);
     let phoneNumber = "918247269134";
