@@ -59,7 +59,7 @@ const RecipeDetailPage = () => {
       data.customizations ? data.customizations : "no customizations"
     }`;
     let encoded_msg = encodeURIComponent(message);
-    let phoneNumber = "918985755632";
+    let phoneNumber = "918247269134";
     let url = `https://wa.me/${phoneNumber}?text=${encoded_msg}`;
     window.open(url, "_blank");
   }
