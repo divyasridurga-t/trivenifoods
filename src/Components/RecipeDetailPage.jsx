@@ -53,9 +53,11 @@ const RecipeDetailPage = () => {
   function placeOrder() {
     let message = `Product : ${data.recipe_name
       .toUpperCase()
-      .replaceAll("-", " ")}\nQuantity : ${
-      data.quantity
-    } Kg \n Price : ${data.price} \nCustomizations : ${data.customizations}`;
+      .replaceAll("-", " ")}\nQuantity : ${data.quantity} Kg \nPrice : ${
+      data.price
+    } \nCustomizations : ${
+      data.customizations ? data.customizations : "no customizations"
+    }`;
     let encoded_msg = encodeURIComponent(message);
     let phoneNumber = "918985755632";
     let url = `https://wa.me/${phoneNumber}?text=${encoded_msg}`;
@@ -79,14 +81,12 @@ const RecipeDetailPage = () => {
           type: "success",
         });
         return latestCart;
-
       });
     if (!data.quantity || data.quantity === "Choose quantity") {
       setValidation(true);
     } else {
       setValidation(false);
     }
-    
   }
 
   return (
@@ -148,7 +148,6 @@ const RecipeDetailPage = () => {
                   Place Order
                 </button>
               </div>
-              
             </div>
           </div>
         </div>

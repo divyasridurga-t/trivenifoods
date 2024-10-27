@@ -24,9 +24,9 @@ const CartPage = () => {
           : item.quantity == "quater"
           ? "1/4"
           : item.quantity;
-      return `Product : ${name}\n Quantity : ${quantity} Kg \n Price: ${
+      return `Product : ${name}\nQuantity : ${quantity} Kg \nPrice: ${
         item.price
-      } \n Customizations : ${
+      } \nCustomizations : ${
         item.customizations ? item.customizations : "No customizations"
       } \n`;
     });
