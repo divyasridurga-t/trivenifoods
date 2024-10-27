@@ -144,6 +144,10 @@ a {
   text-align: center;
 }
 
+.note {
+  padding: 0px 5px 0px 5px;
+}
+
 .detail_img {
   background: linear-gradient(#e9edc9, #fefae0);
   border-radius: 15px;

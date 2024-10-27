@@ -1,8 +1,19 @@
 import Layout from "./Layout";
 import { useCartContext } from "../hooks/useCartContext";
+import { useEffect, useState } from "react";
 
 const CartPage = () => {
   let { cartData, setCartData } = useCartContext();
+  let [price, setPrice] = useState(0);
+
+  useEffect(() => {
+    let totalPrice = cartData.reduce((acc, item) => {
+      let itemPrice = +item.price.replace("₹", "");
+      return acc + itemPrice;
+    }, 0);
+
+    setPrice(totalPrice);
+  }, [cartData]);
 
   function placeOrderClick() {
     let data = cartData.map((item) => {
@@ -13,10 +24,18 @@ const CartPage = () => {
           : item.quantity == "quater"
           ? "1/4"
           : item.quantity;
-      return `Product : ${name}\n Quantity : ${quantity} Kg \n Price: ${item.price} \n Customizations : ${item.customizations}`;
+      return `Product : ${name}\n Quantity : ${quantity} Kg \n Price: ${
+        item.price
+      } \n Customizations : ${
+        item.customizations ? item.customizations : "No customizations"
+      } \n`;
     });
 
-    let wData = data.join("\n\n\n");
+    data = data.join("\n\n");
+
+    let sdata = `${data}\n 𝐓𝐎𝐓𝐀𝐋 𝐏𝐑𝐈𝐂𝐄 : ₹${price}`;
+
+    let wData = sdata;
     let encoded_msg = encodeURIComponent(wData);
     let phoneNumber = "918985755632";
     let url = `https://wa.me/${phoneNumber}?text=${encoded_msg}`;
@@ -59,7 +78,9 @@ const CartPage = () => {
                       <h2>
                         {item.recipe_name.toUpperCase().replace("-", " ")}
                       </h2>
-                      <h2>{quantity} Kg - {item.price}</h2>
+                      <h2>
+                        {quantity} Kg - {item.price}
+                      </h2>
                       <h2>{item.customizations}</h2>
                       <button
                         onClick={() => handleRemoveItem(item.id)}
@@ -87,16 +108,24 @@ const CartPage = () => {
             </div>
           )}
           {cartData.length ? (
-            <div className="cart_place_order_btn">
-              <div>
-                <button onClick={placeOrderClick} className="place_order_btn">
-                  Place Order
-                </button>
-                <button onClick={clearCartClick} className="clear_cart_btn">
-                  Clear cart
-                </button>
+            <>
+              <h3 style={{ textAlign: "center" }}>Total price : {price}</h3>
+              <div className="cart_place_order_btn">
+                <div>
+                  <button onClick={placeOrderClick} className="place_order_btn">
+                    Place Order
+                  </button>
+                  <button onClick={clearCartClick} className="clear_cart_btn">
+                    Clear cart
+                  </button>
+                </div>
               </div>
-            </div>
+              <div className="note">
+                <b>Note : </b> Your order will be redirected to whatsapp as a
+                message. Incase you would like to cancel any of your order do a{" "}
+                <b>delete for everyone</b>.
+              </div>
+            </>
           ) : (
             ""
           )}
