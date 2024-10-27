@@ -4,10 +4,13 @@ import Home from "./Components/Home";
 import RecipeDetailPage from "./Components/RecipeDetailPage";
 import CartPage from "./Components/cartPage";
 import { CartProvider } from "./hooks/useCartContext";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
     <>
+    <ToastContainer/>
       <CartProvider>
         <BrowserRouter>
           <Routes>

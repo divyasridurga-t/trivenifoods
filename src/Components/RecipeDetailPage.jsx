@@ -4,6 +4,8 @@ import { useParams } from "react-router-dom";
 import { useCartContext } from "../hooks/useCartContext.jsx";
 import x from "../Utils/detailPageItems";
 import { v4 as uuidv4 } from "uuid";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const RecipeDetailPage = () => {
   let unique_id = uuidv4();
@@ -53,7 +55,7 @@ const RecipeDetailPage = () => {
       .toUpperCase()
       .replaceAll("-", " ")}\nQuantity : ${
       data.quantity
-    } Kg\nCustomizations : ${data.customizations}`;
+    } Kg \n Price : ${data.price} \nCustomizations : ${data.customizations}`;
     let encoded_msg = encodeURIComponent(message);
     let phoneNumber = "918985755632";
     let url = `https://wa.me/${phoneNumber}?text=${encoded_msg}`;
@@ -72,6 +74,17 @@ const RecipeDetailPage = () => {
     } else {
       setValidation(false);
     }
+    toast("item added to the cart", {
+      position: "top-right",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      type: "success",
+    });
   }
 
   return (
