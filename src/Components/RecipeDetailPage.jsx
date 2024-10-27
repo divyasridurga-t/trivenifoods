@@ -3,8 +3,10 @@ import Layout from "./Layout";
 import { useParams } from "react-router-dom";
 import { useCartContext } from "../hooks/useCartContext.jsx";
 import x from "../Utils/detailPageItems";
+import { v4 as uuidv4 } from "uuid";
 
 const RecipeDetailPage = () => {
+  let unique_id = uuidv4();
   let { recipe = "", id = "" } = useParams();
   let [inputValue, setInputValue] = useState("");
   let { setCartData } = useCartContext();
@@ -19,7 +21,8 @@ const RecipeDetailPage = () => {
     quantity: "",
     customizations: "",
     image: "",
-    price:""
+    price: "",
+    id: "",
   });
   const [validation, setValidation] = useState(false);
 
@@ -40,7 +43,8 @@ const RecipeDetailPage = () => {
       ...data,
       [name]: value,
       image: data_.image,
-      price:data_.price[value]
+      price: data_.price[value],
+      id: unique_id,
     });
   }
 

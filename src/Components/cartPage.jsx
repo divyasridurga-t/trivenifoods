@@ -26,7 +26,7 @@ const CartPage = () => {
 
   function handleRemoveItem(name) {
     let filteredData = cartData.filter((key) => {
-      if (key.recipe_name != name) {
+      if (key.id != name) {
         return key;
       }
     });
@@ -62,7 +62,7 @@ const CartPage = () => {
                       <h2>{quantity} Kg - {item.price}</h2>
                       <h2>{item.customizations}</h2>
                       <button
-                        onClick={() => handleRemoveItem(item.recipe_name)}
+                        onClick={() => handleRemoveItem(item.id)}
                         className="delete_btn"
                       >
                         Remove item
