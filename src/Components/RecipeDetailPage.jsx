@@ -61,7 +61,13 @@ const RecipeDetailPage = () => {
     let encoded_msg = encodeURIComponent(message);
     let phoneNumber = "918247269134";
     let url = `https://wa.me/${phoneNumber}?text=${encoded_msg}`;
-    window.open(url, "_blank");
+
+    if (!data.quantity || data.quantity === "Choose quantity") {
+      setValidation(true);
+    } else {
+      setValidation(false);
+      window.open(url, "_blank");
+    }
   }
 
   function handleAddCartClick(data) {

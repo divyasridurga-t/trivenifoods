@@ -8,7 +8,7 @@ const CartPage = () => {
 
   useEffect(() => {
     let totalPrice = cartData.reduce((acc, item) => {
-      let itemPrice = +item.price.replace("₹", "");
+      let itemPrice = +item?.price?.replace("₹", "");
       return acc + itemPrice;
     }, 0);
 
@@ -17,7 +17,7 @@ const CartPage = () => {
 
   function placeOrderClick() {
     let data = cartData.map((item) => {
-      let name = item.recipe_name.toUpperCase().replace("-", " ");
+      let name = item.recipe_name.toUpperCase()?.replace("-", " ");
       let quantity =
         item.quantity == "half"
           ? "1/2"
@@ -76,7 +76,7 @@ const CartPage = () => {
                     </div>
                     <div className="cart_image_desc">
                       <h2>
-                        {item.recipe_name.toUpperCase().replace("-", " ")}
+                        {item.recipe_name.toUpperCase()?.replace("-", " ")}
                       </h2>
                       <h2>
                         {quantity} - {item.price}
