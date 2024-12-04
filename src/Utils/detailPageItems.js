@@ -187,23 +187,6 @@ const data = {
       4: "1600 ₹",
     },
   },
-  11: {
-    title: "Boondhi Laddo",
-    title: "Boondhi Laddo",
-    image:
-      "https://res.cloudinary.com/dhjygngv2/image/upload/v1729357633/laddu_si55qz.png",
-    quantity: {
-      1: "5 pieces",
-      2: "10 pieces",
-      3: "20 pieces",
-      more: "more ...",
-    },
-    price: {
-      1: "100 ₹",
-      2: "200 ₹",
-      3: "370 ₹",
-    },
-  },
   12: {
     title: "Karappusa",
     telugu_title: "కారప్పుస",
